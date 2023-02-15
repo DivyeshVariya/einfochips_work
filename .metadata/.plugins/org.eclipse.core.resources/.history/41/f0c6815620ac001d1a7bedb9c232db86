@@ -1,0 +1,27 @@
+//package Day5_Assignment;
+import java.io.BufferedReader;  
+import java.io.IOException;  
+import java.io.InputStreamReader;  
+
+public class ExceptionHandle1 {
+	
+	public static void main(String[] args) throws IOException
+	{  
+	        //Creating instance of the BufferedReader class with InputStreamReader  
+	       try {
+			BufferedReader obj = new BufferedReader(new InputStreamReader(System.in));  
+	        int totalScore,totalOver,runRate;
+	        System.out.print("Enter the total runs scored :" );    
+	        totalScore = obj.read(); 
+	        System.out.println("Enter the total overs faced : ");
+	        totalOver = obj.read(); 
+	        runRate=totalScore/totalOver;
+	        System.out.println("Run Rate : " + runRate);
+	       }
+	       catch(Exception e)
+	       {
+	    	   System.out.println(e);
+	       }
+	}
+
+}

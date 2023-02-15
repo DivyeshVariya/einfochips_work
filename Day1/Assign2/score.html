@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Score</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"> </script> 
+</head>
+<body>
+    <center>
+        <h1>
+            IPL Score
+        </h1>
+    <form>
+        <label><h3> Team-1 Score :</h3></label>
+        <br>
+        <label> Team Name :</label>
+        <input type="text" id="team1_name" placeholder="CSK" required>
+        
+        <label> Score :</label>
+        <input type="text" id="team1_score" placeholder="123/8" required>
+
+        <label><h3>Team-2 Score :</h3></label>
+        <br>
+        <label> Team Name :</label>
+        <input type="text" id="team2_name" placeholder="GL" required>
+        <label> Score :</label>
+        <input type="text" id="team2_score" placeholder="123/8" required>
+        <br>
+        <button type="submit" id="submit_btn" onclick="Fun1(event)">Submit</button>
+    </form>
+    <p>NOTE : Score must be in range 0 to 999 and Vcat in range 0 to 10.</p>
+    <hr>
+    <h2>Result :</h2>
+    <p id="result"></p>
+    </center>
+    <br>
+    <h4><a href="mailto:variyad81@gmail.com">Developed by variyad81@gmail.com</a></h4>
+    
+</body>
+</html>

@@ -1,0 +1,8 @@
+public class CustomException extends Exception{
+	
+	public InvalidAgeRangeException(String s)
+    {
+        // Call constructor of parent Exception
+        super(s);
+    }
+}

@@ -1,0 +1,19 @@
+
+public class ODIMatch extends Match{
+	int overTotal=50;
+	public float calculateRunRate()
+	{
+		return (this.getTarget()-this.getCurrentscore())/(overTotal-int(this.getCurrentover()));
+	}
+
+	public int calculateBalls()
+	{
+		return int(overTotal-int(this.getCurrentover()))*6;
+	}
+
+	public void display(double reqRunrate, int balls) 
+	{
+		System.out.println("Need "+ this.getTarget()-this.getCurrentscore() +" runs in "+ balls +" balls");
+		System.out.println("Required Runrate: "+ this.reqRunrate);
+	}
+}

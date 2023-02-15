@@ -1,0 +1,8 @@
+public class CustomException extends ExceptionMain{
+	
+	public CustomException(String s)
+    {
+        // Call constructor of parent Exception
+		System.out.println(s);
+    }
+}

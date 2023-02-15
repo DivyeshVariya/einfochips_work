@@ -1,0 +1,16 @@
+body{
+    background-color:bisque;
+}
+
+h2.dashed {
+    outline-style: dashed;
+}
+
+table, th, td {
+    border:1px solid black;
+  }
+img{
+    position: absolute;
+    top: 20px;
+    right: 75px;
+}

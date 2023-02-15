@@ -1,0 +1,28 @@
+import java.io.BufferedReader;  
+import java.io.IOException;  
+import java.io.InputStreamReader;
+import java.util.Scanner;  
+
+public class ExceptionHandle1 {
+	
+	public static void main(String[] args)
+	{  
+	        //Creating instance of the BufferedReader class with InputStreamReader  
+//			BufferedReader obj = new BufferedReader(new InputStreamReader(System.in));  
+			Scanner scan=new Scanner(System.in);
+			int totalScore=50,totalOver=0;
+//	        System.out.print("Enter the total runs scored :" );    
+//	        totalScore = Float.parseFloat(obj.readLine()); 
+//	        System.out.print("Enter the total overs faced : ");
+//	        totalOver = Float.parseFloat(obj.readLine());
+	       try 
+	       {
+	        System.out.println(totalScore/totalOver);
+	       }
+	       catch(ArithmeticException e)
+	       {
+	           System.out.println(e);
+	       }
+	}
+
+}

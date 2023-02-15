@@ -1,0 +1,18 @@
+
+public class ODIMatch extends Match{
+
+	public float calculateRunRate()
+	{
+		return ;
+	}
+
+	public int calculateBalls()
+	{
+		return;
+	}
+
+	public void display(double reqRunrate, int balls) 
+	{
+		
+	}
+}

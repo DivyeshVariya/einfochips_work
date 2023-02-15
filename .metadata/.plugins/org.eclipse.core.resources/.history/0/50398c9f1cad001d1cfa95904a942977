@@ -1,0 +1,19 @@
+import java.time.LocalDate;
+import java.util.Scanner;
+
+public class MatchMain {
+  public static void main(String[] args)
+  {
+	  Scanner scan= new Scanner(System.in);
+	  String matchDate;
+	  String teamOne;
+	  String teamTwo;
+	  System.out.println("Enter the matchDate :");
+	  matchDate=scan.next();
+	  System.out.println("Enter the team one :");
+	  teamOne=scan.next();
+	  System.out.println("Enter the team two :");
+	  teamTwo=scan.next();
+	  Match m=new Match(matchDate,teamOne,teamTwo);
+  }
+}

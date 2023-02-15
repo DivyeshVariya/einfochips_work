@@ -1,0 +1,7 @@
+
+public class Circle extends Shape{
+	public int calculateArea(int value)
+	{
+		return Math.PI * value * value;
+	}
+}
