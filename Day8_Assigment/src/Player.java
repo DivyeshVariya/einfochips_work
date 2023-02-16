@@ -21,4 +21,5 @@ public class Player {
 		this.skill = skill;
 	}
 	
+	
 }
