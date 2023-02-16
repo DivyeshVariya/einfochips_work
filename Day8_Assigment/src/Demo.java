@@ -13,6 +13,7 @@ public class Demo {
 		TreeMap<String,Integer> tm= new TreeMap<String,Integer>();
 		System.out.println(tm.put(null,234));
 		System.out.println(tm.put(null,23));
+		
 	}
 
 }
