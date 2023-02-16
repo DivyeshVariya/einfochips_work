@@ -13,6 +13,5 @@ public class PlayerComparator implements Comparator<Player>{
 		// 2nd level comparison
 	    return (NameCompare == 0) ? SkillCompare: NameCompare;
 	}
-	
 
 }
