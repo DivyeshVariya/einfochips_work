@@ -11,6 +11,7 @@ public class Demo {
 		al.add(3);
 		al.add(4);
 		al.add(5);
+		
 		/// return only even number 
 		List<Integer> l4=al.stream().filter(i->i%2==0).collect(Collectors.toList());
 		System.out.println(l4);
