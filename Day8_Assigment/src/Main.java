@@ -53,5 +53,6 @@ public class Main {
 		{
 			System.out.println(p[i].getName() +" "+p[i].getSkill());
 		}
+		
 	}
 }
