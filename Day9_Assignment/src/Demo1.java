@@ -1,12 +1,13 @@
 
 public class Demo1 {
-
+	private String name;
+	private int runs;
 	public Demo1(String name, int runs) {
 		super();
 		this.name = name;
 		this.runs = runs;
 	}
-	private String name;
+
 	public String getName() {
 		return name;
 	}
@@ -19,5 +20,5 @@ public class Demo1 {
 	public void setRuns(int runs) {
 		this.runs = runs;
 	}
-	private int runs;
+	
 }
