@@ -47,11 +47,12 @@ public class Main {
 		{
 			al.add(p[j]);
 		}
-		System.out.println(al.get(0).getSkill());
 		Collections.sort(al,new PlayerComparator());
+		System.out.println("Player list after sort..\n");
+		System.out.println("\t : Player Details : ");
 		for(int i=0;i<numPlayer;i++)
 		{
-			System.out.println(p[i].getName() +" "+p[i].getSkill());
+			System.out.println("-->"+(i+1)+" Player : "+al.get(i).getName() +" ->Skill :"+al.get(i).getSkill());
 		}
 		
 	}
