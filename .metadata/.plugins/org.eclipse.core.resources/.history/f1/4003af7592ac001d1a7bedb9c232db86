@@ -1,8 +1,0 @@
-
-public class Exception {
-	Exception()
-	{
-		throw new InvalidAgeRangeException();
-	}
-
-}
