@@ -1,9 +1,0 @@
-
-public class CustomException1 {
-
-	public CustomException1(String s) {
-		
-		// TODO Auto-generated constructor stub
-		super(s);
-	}
-}
