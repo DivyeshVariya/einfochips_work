@@ -5,11 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index page </title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <center>
             <h1>Player Records...</h1>
-    </center>
 
+    <form action="">
+        <label for="pid" >Player Id :</label>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <input type="text" id="playerid" placeholder="101">
+        <br>
+        <br>
+        <label for="pname">Player Name :</label>
+        &nbsp;
+        <input type="text" id="playername" placeholder="Virat Kohli">
+        <br>
+        <br>
+        <label for="prun">Player Runs :</label>
+        &nbsp;
+        <input type="text" id="playerruns" placeholder="202">
+        <br>
+        <br>
+        <button onclick="addPlayer(event)" id="add">Add Player</button>
+        &nbsp;
+        <button onclick="removePlayer(event)" id="remove">Remove Player</button>
+        <br>
+    </form>
+    <br>
+    <hr>
+    <br>
+    <table id="pdetail" border="2px" >
+        <thead>
+            <td>PID</td>
+            <td>PName</td>
+            <td>PRuns</td>
+            <td>Select For Remove</td>
+        </thead>
+    </table>
+    <p>Developed by : Divyesh Variya</p>
+    </center>
 </body>
 </html>

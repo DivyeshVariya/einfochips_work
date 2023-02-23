@@ -1,0 +1,11 @@
+body{
+    background: linear-gradient(to right, #ff8a00 0%, #dd4c4f 100%);
+}
+
+#add{
+    color: rgb(88, 135, 17);
+}
+
+#remove{
+    color: red;
+}
