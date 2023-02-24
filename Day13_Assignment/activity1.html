@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Practice for jquery </title>
+    <script>
+        $(document).ready(function(){
+          $("p").click(function(){
+            $(this).hide();
+          });
+          $('img').click(function(){
+            if($(this).attr("src")=="images1.jpg")
+            {
+            $(this).attr("src","images2.webp");
+            }
+            else{
+                $(this).attr("src","images1.jpg");
+            }
+          });
+          $('button').click(function(){
+            $('h3').html("new Added text..");
+            //$(this).add();
+          })
+        });
+        
+        </script>
+</head>
+<body>
+    <center>
+<h1>JQuery Activity 1.....</h1>
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+<h3></h3>
+<button> Add text</button>
+<img src="images1.jpg" alt="" width="500px" height="500px">
+
+</center>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+    <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css'
+        rel='stylesheet'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+    </script>
+
+
+    <title>Jquery Activity 2</title>
+    <script>
+        $(document).ready(function () {
+            $("#my_date_picker").datepicker({
+                // firstDay:2 // Tuesday is first day
+                // changeMonth: false,
+                // changeYear: false
+                maxDate: '+3d',
+                minDate: '-4d',
+            });
+            $("button").click(function () {
+
+                if ($("input[name=dateinput]").val() != undefined || $("input[name=dateinput]").val() != "") {
+                    var a = $("input[name=dateinput]").val();
+                    console.log(a);
+                    $('#choosedDate').html("You Choosed date is " + a);
+                }
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>Jquery Activity 2...</h1>
+        <h3>Data picker Library use for set min and max date for selection...</h3>
+        <label>Select Date within 3 days in future & 4 days in past to current : </label>
+        <br>
+        <br>
+        <input type="text" id="my_date_picker" placeholder="mm/dd/yyyy" name="dateinput" style="text-align: center;">
+        <br>
+        <br>
+        <button>Submit</button>
+        <br>
+        <br>
+        <h3 id="choosedDate"></h3>
+    </center>
+
+</body>
+
+</html>
