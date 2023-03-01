@@ -1,0 +1,41 @@
+--------------------------Day 17 Assignment
+
+1. Write the query to display productionid, production name with total number movies produced by each. 
+
+Answer : 
+
+2. Write the query to display production name, owner name have produced more than 2 movies.
+
+Answer : 
+
+3. Write the query to display production name, owner name have produced maximum movies.
+
+Answer : 
+
+4. Write the query to display the heroname acted in the producer name=’Subaskaran’.
+
+Answer : 
+
+5. Write the query to display the moviename, heroname whose productionid ends with 82.
+
+Answer :
+
+6. Write the query to display the productionname, ownername who has not produced the movie.
+
+Answer :
+
+7. Write the query to display the productionname, ownername who has not produced the ‘hindi’ movie.
+
+Answer :
+
+8. Write the query name to display the heroinename who acted in the different productions but not in same production id.
+
+Answer : Amy
+
+9. Write the query to display the heroname who acted in maximum languages.
+
+Answer : 
+
+10. Write the query to display the production name, owner name who has produced movie for more languages.
+
+Answer :

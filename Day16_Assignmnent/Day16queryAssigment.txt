@@ -1,0 +1,43 @@
+-------------------------Day16 Assignment
+
+1. Display the name of movies, movie type is starts with Drama.
+
+Answer : select Moviename from movie where Movietype like 'Drama%';
+
+2. Display the movies acted by actor Ayshmann.
+
+Answer 1 : select Moviename from movie where Heroname like "%Ayushmann%";
+Answer 2 : select Moviename from movie where Heroname="Ayushmann";
+
+3. Display the count of movies, having length above 18.
+
+Answer : select count(*) from movie where length>18;
+
+4. Display the movie having minimum length.
+
+Answer : select Moviename from movie where length=(select min(length) from movie);
+
+5. Display all the details of movie, the language that first name starts with ‘T’
+
+Answer : select * from movie where Language like "T%";
+
+6. Display the movie name, hero name, heroine name whose having maximum length.
+
+Answer : select Moviename,Heroname,Heroine from movie where length=(select max(length) from movie);
+
+7. Display the movie name, hero name, heroine name the movie released after 15 march 2018.
+
+Answer : select Moviename,Heroname,Heroine from movie where Releaseddate>"2018-03-15";
+
+8. Display the count of thriller movies.
+
+Answer : select count(*) from movie where Movietype="thriller";
+
+9. Display the count of movies whose released before 15 march 2018.
+
+Answer :  select count(*) from movie where Releaseddate<"2018-03-15";
+
+10. Display the release date of the movie name ‘Zero’
+
+Answer : select Releaseddate from movie where Moviename="Zero";
+
