@@ -16,7 +16,7 @@ public class PersonMain {
 		
 		ApplicationContext ac1 = new AnnotationConfigApplicationContext(Team.class);
 		Team t=ac1.getBean(Team.class);
-		t.display();
+		t.Display();
 		
 	}
 }
