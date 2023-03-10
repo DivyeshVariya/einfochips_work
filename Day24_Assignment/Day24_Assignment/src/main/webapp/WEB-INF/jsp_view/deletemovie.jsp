@@ -18,6 +18,7 @@ Enter the movie name :<input type="text" name="inputmovienamedelete">
 </form>
 <br>
 <h3>${msg}</h3>
+
 </center>
 </body>
 </html>

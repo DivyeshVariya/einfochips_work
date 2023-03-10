@@ -1,5 +1,6 @@
 package com.example.Day24_Assignment.Dao;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -14,7 +15,10 @@ import com.example.Day24_Assignment.model.Movie;
 public interface MovieDao extends JpaRepository<Movie,Integer>{
 	
 	Optional<Movie> findBymoviename(String moviename);
-//	@Modifying
-	@Query("DELETE from movie m WHERE m.moviename = :moviename")
-    void deleteBymoviename(String moviename);
+	@Modifying
+	@Query("delete from Movie m WHERE m.moviename= :moviename")
+    int deleteBymoviename(@Param("moviename") String moviename);
+	
+	@Query("select m from Movie m where m.language= :language")
+	List<Movie> findBylanguage(@Param("language") String language);
 }

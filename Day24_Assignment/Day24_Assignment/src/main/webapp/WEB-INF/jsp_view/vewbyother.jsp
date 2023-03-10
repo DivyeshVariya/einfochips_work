@@ -4,13 +4,13 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Home page</title>
+<title>View by other field</title>
 </head>
 <body>
-<h1>Welcome to home page....</h1>
+<center>
+<h1>View by ${lang} language</h1>
 <br>
-<a href="addmovie">Add New Movie now..........</a>
-
-
+<h3>${list}</h3>
+</center>
 </body>
 </html>

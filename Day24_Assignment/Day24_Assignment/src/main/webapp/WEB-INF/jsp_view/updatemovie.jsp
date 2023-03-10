@@ -16,6 +16,30 @@ Enter the movie name :<input type="text" name="inputmovienameupdate">
 <br> 
 <button type="submit">Submit</button>
 </form>
+
+<form action="updatedata" method="post">
+<label>Movie id :</label>
+<input type="number" name="mid" value=${id}>
+<br>
+<br>
+
+<label>Movie Name :</label>
+<input type="text" name="mname" value=${name}>
+<br>
+<br>
+
+<label>Movie Language :</label>
+<input type="text" name="language" value=${director}>
+<br>
+<br>
+
+<label>Movie Director :</label>
+<input type="text" name="mdirector" value=${language}>
+<br>
+<br>
+
+<button type="submit"> Submit Data </button>
+</form>
 <br>
 <h3>${msg}</h3>
 </center>

@@ -13,6 +13,8 @@ import org.springframework.web.servlet.ModelAndView;
 import com.example.Day24_Assignment.Dao.MovieDao;
 import com.example.Day24_Assignment.model.Movie;
 
+import jakarta.transaction.Transactional;
+
 @RestController
 public class JspController {
 	
@@ -65,6 +67,43 @@ public class JspController {
 		return new ModelAndView("updatemovie");
 	}
 	
+	@RequestMapping("updatemovie")
+	public ModelAndView updatemoviename(@RequestParam("inputmovienameupdate") String inputmovienameupdate)
+	{
+		ModelAndView mv=new ModelAndView("updatemovie");
+		List<Movie> li=md.findAll();
+		for(Movie m :li)
+		{
+			if(m.getMoviename().equals(inputmovienameupdate))
+			{
+				mv.addObject("id",m.getMovieid());
+				mv.addObject("name",m.getMoviename());
+				mv.addObject("language",m.getLanguage());
+				mv.addObject("director",m.getDirector());
+				break;
+			}
+		}
+		return mv;
+	}
+	
+	@RequestMapping("updatedata")
+	public ModelAndView updatedata(@RequestParam int mid,String mname,String language,String director)
+	{
+		ModelAndView mv=new ModelAndView("updatemovie");
+		Movie flag=md.save(new Movie(mid,mname,language,director));
+		if(flag.equals(null))
+		{
+			String msg="data not updated successfully...";
+			mv.addObject("msg",msg);
+			return mv;
+			}
+			else
+			{
+				String msg="data updated successfully...";
+				mv.addObject("msg",msg);
+				return mv;
+			}
+		}
 
 	@RequestMapping("deletemoviepage")
 	public ModelAndView deletemovienamepage()
@@ -73,14 +112,35 @@ public class JspController {
 	}
 	
 	@RequestMapping("deletemovie")
-	public ModelAndView deletemoviename(@RequestParam String inputmovienamedelete)
+	@Transactional
+	public ModelAndView deletemoviename(@RequestParam("inputmovienamedelete") String inputmovienamedelete)
 	{
-		ModelAndView mv=new ModelAndView("home");
-		md.deleteBymoviename(inputmovienamedelete);
+		ModelAndView mv=new ModelAndView("deletemovie");
+		int flag=md.deleteBymoviename(inputmovienamedelete);
+		if(flag==1)
+		{
 		String msg="data delete successfully...";
 		mv.addObject("msg",msg);
 		return mv;
+		}
+		else
+		{
+			String msg="data not delete successfully...";
+			mv.addObject("msg",msg);
+			return mv;
+		}
 		
+	}
+	
+	@RequestMapping("viewbylanguage")
+	public ModelAndView viewbylanguagepage(@RequestParam("lang") String lang)
+	{
+		ModelAndView mv=new ModelAndView("vewbyother");
+		mv.addObject("lang",lang);
+		List<Movie> li=md.findBylanguage(lang);
+		System.out.println(li);
+		mv.addObject("list",li);
+		return mv;
 	}
 
 }
