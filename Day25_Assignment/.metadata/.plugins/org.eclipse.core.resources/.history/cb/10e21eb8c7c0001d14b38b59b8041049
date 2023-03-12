@@ -1,0 +1,80 @@
+package com.example.Day25_Assignment.controller;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.example.Day25_Assignment.Dao.MovieDao;
+import com.example.Day25_Assignment.model.Movie;
+
+@RestController
+public class JspController {
+
+	@Autowired
+	MovieDao md;
+	
+	@RequestMapping("/")
+	public ModelAndView gethome()
+	{
+		ModelAndView mv=new ModelAndView("home");
+		mv.addObject("isupdate",-1);
+		return mv;
+	}
+	
+	@RequestMapping("adddata")
+	public ModelAndView insertdatatodb(@RequestParam int mid,String mname,String language,String director)
+	{
+		ModelAndView mv=new ModelAndView("home");
+		Movie m=new Movie(1,director,language,mname);
+		md.save(m);
+		List<Movie> li=md.findAll();
+		mv.addObject("movie",li);
+		mv.addObject("isupdate",-1);
+		return mv;
+	}
+	
+	@RequestMapping("delete")
+	public ModelAndView deletedatatodb(@RequestParam int mid)
+	{
+		ModelAndView mv=new ModelAndView("home");
+		md.deleteById(mid);
+		List<Movie> li=md.findAll();
+		mv.addObject("movie",li);
+		mv.addObject("isupdate",-1);
+		return mv;
+	}
+	
+	@RequestMapping("update")
+	public ModelAndView updatedatetodb(@RequestParam int mid)
+	{
+		ModelAndView mv=new ModelAndView("home");
+		Optional<Movie> m=md.findById(mid);
+		mv.addObject("isupdate",1);
+		mv.addObject("mid",mid);
+		mv.addObject("mname",m.get().getMname());
+		mv.addObject("language",m.get().getLanguage());
+		mv.addObject("director",m.get().getDirector());
+		List<Movie> li=md.findAll();
+		mv.addObject("movie",li);
+		return mv;
+	}
+	
+	@RequestMapping("updateall")
+	public ModelAndView updatedatetodb1(@RequestParam int mid,String name,String language1,String director1)
+	{
+		ModelAndView mv=new ModelAndView("home");
+		Movie m=new Movie(mid,director1,language1,name);
+		System.out.println(m);
+		md.save(m);
+		List<Movie> li=md.findAll();
+		mv.addObject("movie",li);
+		mv.addObject("isupdate",-1);
+		return mv;
+	}
+}

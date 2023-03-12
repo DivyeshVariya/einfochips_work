@@ -29,12 +29,12 @@ Enter the movie name :<input type="text" name="inputmovienameupdate">
 <br>
 
 <label>Movie Language :</label>
-<input type="text" name="language" value=${director}>
+<input type="text" name="language" value=${language}>
 <br>
 <br>
 
 <label>Movie Director :</label>
-<input type="text" name="mdirector" value=${language}>
+<input type="text" name="mdirector" value=${director}>
 <br>
 <br>
 

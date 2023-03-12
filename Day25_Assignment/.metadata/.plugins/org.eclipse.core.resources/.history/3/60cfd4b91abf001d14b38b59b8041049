@@ -1,0 +1,9 @@
+package com.example.Day25_Assignment.Dao;
+
+public class MovieDao {
+
+@Repository
+public interface MovieDao extends JpaRepository<Movie,Integer>{
+		
+	}
+}

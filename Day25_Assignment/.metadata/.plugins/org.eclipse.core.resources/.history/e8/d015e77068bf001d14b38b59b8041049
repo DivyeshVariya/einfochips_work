@@ -1,0 +1,5 @@
+package com.example.Day25_Assignment.Dao;
+
+public interface MovieDao {
+
+}

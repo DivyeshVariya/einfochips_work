@@ -1,0 +1,40 @@
+package com.example.Day25_Assignment.model;
+
+public class Movie {
+
+public Movie(int mid, String mname, String language, String director) {
+	super();
+	this.mid = mid;
+	this.mname = mname;
+	this.language = language;
+	this.director = director;
+}
+private int mid;
+public int getMid() {
+	return mid;
+}
+public void setMid(int mid) {
+	this.mid = mid;
+}
+public String getMname() {
+	return mname;
+}
+public void setMname(String mname) {
+	this.mname = mname;
+}
+public String getLanguage() {
+	return language;
+}
+public void setLanguage(String language) {
+	this.language = language;
+}
+public String getDirector() {
+	return director;
+}
+public void setDirector(String director) {
+	this.director = director;
+}
+private String mname;
+private String language;
+private String director;
+}
