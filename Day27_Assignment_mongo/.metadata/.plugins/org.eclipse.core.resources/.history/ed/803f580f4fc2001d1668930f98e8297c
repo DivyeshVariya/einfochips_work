@@ -1,0 +1,28 @@
+package com.example.Day27_Assignment_mongo.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.example.Day27_Assignment_mongo.Dao.TraineeDao;
+import com.example.Day27_Assignment_mongo.model.Trainee;
+@RestController
+public class JspController {
+
+	@Autowired
+	TraineeDao td;
+	
+@RequestMapping("/")
+@ResponseBody
+public ModelAndView gethome() {
+	ModelAndView mv=new ModelAndView("home");
+	td.save(new Trainee(1,"Divyesh Variya","Surat"));
+	List<Trainee> li=td.findAll();
+	mv.addObject("data",li);
+	return mv;
+}
+}

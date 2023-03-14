@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+</head>
+<body>
+<h1>Welcome to home page....</h1>
+<form action="insert">
+Enter Trainee id : <input type="number" name="id" required>
+Enter Trainee Name : <input type="text" name="name" required>
+Enter Trainee From City : <input type="text" name="from" required>
+<button type="submit">Submit data</button>
+<br>
+<h3>${msg}</h3>
+<a href="viewdata">View Data</h3>
+</form>
+</body>
+</html>

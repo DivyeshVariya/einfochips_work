@@ -1,0 +1,5 @@
+package com.example.Day27_Assignment_mongo.model;
+
+public class Trainee {
+
+}

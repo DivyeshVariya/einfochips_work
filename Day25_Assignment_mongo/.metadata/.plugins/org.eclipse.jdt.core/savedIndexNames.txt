@@ -1,3 +1,0 @@
-INDEX VERSION 1.131+C:\Users\158563\OneDrive - Arrow Electronics, Inc\Desktop\einfochips_Activity\Day25_Assignment_mongo\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
-37525744.index
