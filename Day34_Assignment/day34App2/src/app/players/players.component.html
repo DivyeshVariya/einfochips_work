@@ -1,0 +1,14 @@
+<h3>All Players</h3>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Skill</th>
+        <th>Team</th>
+    </tr>
+    <tr *ngFor="let players of players">
+        <td>{{players.name}}</td>
+        <td>{{players.skill}}</td>
+        <td>{{players.team}}</td>
+    </tr>
+</table>
