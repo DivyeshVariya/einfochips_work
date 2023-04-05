@@ -224,3 +224,40 @@
 2023-03-14 23:23:59,341 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
 2023-03-14 23:23:59,342 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
 2023-03-14 23:23:59,345 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\158563\OneDrive - Arrow Electronics, Inc\Desktop\einfochips_Activity\Day27_Assignment_mongo\Day27_Assignment_mongo\src\test\resources
+2023-03-23 12:45:19,830 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-23 12:48:48,052 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-23 12:48:48,077 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-23 12:48:48,082 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\158563\OneDrive - Arrow Electronics, Inc\Desktop\einfochips_Activity\Day27_Assignment_mongo\Day27_Assignment_mongo\src\test\resources
+2023-03-23 12:50:21,166 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-23 12:50:21,173 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-23 12:50:21,179 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\158563\OneDrive - Arrow Electronics, Inc\Desktop\einfochips_Activity\Day27_Assignment_mongo\Day27_Assignment_mongo\src\test\resources
+2023-03-23 12:53:53,551 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-23 12:53:53,559 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-23 12:53:53,561 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\158563\OneDrive - Arrow Electronics, Inc\Desktop\einfochips_Activity\Day27_Assignment_mongo\Day27_Assignment_mongo\src\test\resources
+2023-03-23 12:55:58,259 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-23 12:55:58,267 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-23 12:55:58,271 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\158563\OneDrive - Arrow Electronics, Inc\Desktop\einfochips_Activity\Day27_Assignment_mongo\Day27_Assignment_mongo\src\test\resources
+2023-03-23 12:57:15,553 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-23 12:57:15,554 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-23 12:57:15,557 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\158563\OneDrive - Arrow Electronics, Inc\Desktop\einfochips_Activity\Day27_Assignment_mongo\Day27_Assignment_mongo\src\test\resources
+2023-03-23 12:58:10,486 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-23 12:58:10,487 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-23 12:58:10,489 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\158563\OneDrive - Arrow Electronics, Inc\Desktop\einfochips_Activity\Day27_Assignment_mongo\Day27_Assignment_mongo\src\test\resources
+2023-03-23 12:58:42,785 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-23 12:58:42,786 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-23 12:58:42,789 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\158563\OneDrive - Arrow Electronics, Inc\Desktop\einfochips_Activity\Day27_Assignment_mongo\Day27_Assignment_mongo\src\test\resources
+2023-03-23 12:59:33,483 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-23 12:59:33,484 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-23 12:59:33,487 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\158563\OneDrive - Arrow Electronics, Inc\Desktop\einfochips_Activity\Day27_Assignment_mongo\Day27_Assignment_mongo\src\test\resources
+2023-03-23 13:01:37,878 [Worker-18: Launching Day27_Assignment_mongo - Day27AssignmentMongoApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-23 13:01:37,878 [Worker-18: Launching Day27_Assignment_mongo - Day27AssignmentMongoApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-23 13:01:37,880 [Worker-18: Launching Day27_Assignment_mongo - Day27AssignmentMongoApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\158563\OneDrive - Arrow Electronics, Inc\Desktop\einfochips_Activity\Day27_Assignment_mongo\Day27_Assignment_mongo\src\test\resources
+2023-03-23 13:04:50,957 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-23 13:04:50,966 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-23 13:04:50,969 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\158563\OneDrive - Arrow Electronics, Inc\Desktop\einfochips_Activity\Day27_Assignment_mongo\Day27_Assignment_mongo\src\test\resources
+2023-03-23 13:06:45,875 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-23 13:06:45,887 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-23 13:06:45,891 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\158563\OneDrive - Arrow Electronics, Inc\Desktop\einfochips_Activity\Day27_Assignment_mongo\Day27_Assignment_mongo\src\test\resources
+2023-03-23 13:08:14,769 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-23 13:08:14,787 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-23 13:08:14,791 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\158563\OneDrive - Arrow Electronics, Inc\Desktop\einfochips_Activity\Day27_Assignment_mongo\Day27_Assignment_mongo\src\test\resources

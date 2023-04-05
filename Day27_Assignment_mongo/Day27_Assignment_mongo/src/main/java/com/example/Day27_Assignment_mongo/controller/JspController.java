@@ -1,10 +1,13 @@
 package com.example.Day27_Assignment_mongo.controller;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 import org.bson.Document;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -14,7 +17,9 @@ import org.springframework.web.servlet.ModelAndView;
 import com.example.Day27_Assignment_mongo.Dao.TraineeDao;
 import com.example.Day27_Assignment_mongo.model.Trainee;
 import com.mongodb.client.MongoCollection;
+
 @RestController
+@CrossOrigin
 public class JspController {
 
 	@Autowired
@@ -71,5 +76,10 @@ public ModelAndView viewdata() {
 	mv.addObject("count",td.count());
 	return mv;
 	}
+@RequestMapping("/fatch")
+public List<Trainee> fatch(){
+	List<Trainee> li=td.findAll();
+	return li;
+}
 
 }
