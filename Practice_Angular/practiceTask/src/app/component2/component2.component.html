@@ -1,0 +1,24 @@
+<p>component2 works!</p>
+<br>
+<a href="component0">Go Back...</a> 
+<br>
+<form (submit)="onSubmit()">
+Enter Id: <input type="number" [(ngModel)]="userId" name="userId"><br>
+<input type="submit" value="Submit">
+</form>
+<table>
+    <tr>
+    <th>AlbumId</th>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Image</th>
+    <th>thumbnailUrl</th>
+    </tr>
+    <tr *ngFor="let user of users">
+        <td>{{user.albumId}}</td>
+        <td>{{user.id}}</td>
+        <td>{{user.title}}</td>
+        <td><img src={{user.url}}></td>
+        <td><img src={{user.thumbnailUrl}}></td>
+     </tr>
+</table>
