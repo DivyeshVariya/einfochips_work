@@ -1,0 +1,18 @@
+<div style="text-align: center;">
+<h1>:: All Users ::</h1>
+<br>
+<br>
+<table border="2" class="center">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Photo</th>
+    </tr>
+    <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.login}}</td>
+        <td><img src={{user.avatar_url}} style="width:300px;height:300px"></td>
+    </tr>
+</table>
+</div>
+

@@ -1,0 +1,30 @@
+<h1>:: View User By Name ::</h1>
+<br>
+<br>
+<form (submit)="onSubmit()" >
+    <label>User Name : </label>
+    <input type="text" [(ngModel)]="userLoginName" name="userLoginName">
+    <br>
+    <br>
+    <button type="submit">Get User</button>
+</form>
+<br>
+<br>
+<div *ngIf="errorMsg!=''; else elseBlock">
+    {{errorMsg}}
+</div>
+<ng-template #elseBlock>
+    <table border="2" class="center">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Photo</th>
+    </tr>
+    <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.login}}</td>
+        <td><img src={{user.avatar_url}} style="width:300px;height:300px"></td> 
+    </tr>
+</table>
+</ng-template>
+
