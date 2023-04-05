@@ -1,0 +1,14 @@
+<h1>Reactive forms</h1>
+
+<form action="" [formGroup]="registerfrm" >
+  <input type="text" [formControl]="name" ><br>
+  <input type="text" formControlName="name1" ><br>
+  <input type="email" formControlName="email" ><br>
+  <input type="password" formControlName="password" ><br>
+  <input type="button" value="submit" (click)="clearName()" (click)="clearName1()">
+  
+</form>
+{{registerfrm.status}}
+<div *ngIf='isClicked===true'>
+Name : {{name1}} <br>email id: {{email}} <br> password : {{password}}</div>
+ 
