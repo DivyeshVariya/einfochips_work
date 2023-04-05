@@ -1,0 +1,9 @@
+<p>demo works!</p>
+{{value123}}
+<button type="button" (click)="sendMsg('ghfhyhy')">click me</button>
+
+<form action="" #myfrm="ngForm" (ngSubmit)="saveData(myfrm)">
+    <input type="text" [(ngModel)]="uname" name="uname">
+    <input type="submit" value="Submit">
+
+</form>

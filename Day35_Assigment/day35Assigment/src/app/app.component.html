@@ -1,0 +1,6 @@
+<input typr="text" [(ngModel)]="value1">
+<h3>{{value1}}</h3>
+<br>
+{{re_value}}
+<app-demo [value123]="value1" (newevent)="receivedata($event)"></app-demo>
+
